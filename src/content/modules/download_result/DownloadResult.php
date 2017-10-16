@@ -31,7 +31,7 @@ function DownloadResultFromString($string, $attachmentFilename, $status = 200) {
 	header ( "Content-length: " . $filesize ); // tells file size
 	header ( "Pragma: no-cache" );
 	header ( "Expires: 0" );
-	echo $attachmentFilename;
+	echo $string;
 	exit ();
 }
 function DownloadResultFromFile($filename, $attachmentFilename = null, $status = 200) {
