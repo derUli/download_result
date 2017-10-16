@@ -1,0 +1,9 @@
+{
+	"id": "download_result",
+	"version": "1.0",
+	"description": "Offer data as download",
+	"categories": [
+		"development"
+	],
+	"compatible_from": "2017.4"
+}
