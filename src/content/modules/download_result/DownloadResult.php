@@ -35,6 +35,6 @@ function DownloadResultFromString($string, $attachmentFilename, $status = 200) {
 	exit ();
 }
 function DownloadResultFromFile($filename, $attachmentFilename = null, $status = 200) {
-	DownloadResult ( $filename, $status, $attachmentFilename );
+	DownloadResult ( $filename, $attachmentFilename, $status );
 }
 	
