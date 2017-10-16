@@ -1,5 +1,5 @@
 <?php
-function DownloadResult($filename, $status = 200, $attachmentFilename = null) {
+function DownloadResult($filename, $attachmentFilename = null, $status = 200) {
 	@set_time_limit ( 0 );
 	if (! $attachmentFilename) {
 		$attachmentFilename = $filename;
@@ -19,7 +19,7 @@ function DownloadResult($filename, $status = 200, $attachmentFilename = null) {
 		exit ();
 	}
 }
-function DownloadResultFromString($string, $status = 200, $attachmentFilename) {
+function DownloadResultFromString($string, $attachmentFilename, $status = 200) {
 	@set_time_limit ( 0 );
 	$attachmentFilename = basename ( $attachmentFilename );
 	$filesize = getStringLengthInBytes ( $string );
@@ -34,7 +34,7 @@ function DownloadResultFromString($string, $status = 200, $attachmentFilename) {
 	echo $filesize;
 	exit ();
 }
-function DownloadResultFromFile($filename, $status = 200, $attachmentFilename = null) {
+function DownloadResultFromFile($filename, $attachmentFilename = null, $status = 200) {
 	DownloadResult ( $filename, $status, $attachmentFilename );
 }
 	
